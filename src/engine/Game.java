@@ -210,7 +210,7 @@ public class Game implements ActionValidator,HeroListener , AIListener{
 			currentHero.getField().get(i).setAttacked(false);
 		}
 		// the hero should draw a card
-		if(secondHero instanceof Player){
+		if(this.sim ){
 			try {
 				currentHero.drawCard();
 			}catch (Exception e){}

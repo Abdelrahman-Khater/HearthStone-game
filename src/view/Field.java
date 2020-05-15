@@ -297,7 +297,7 @@ private minionButton attacker = null;
 				}catch (CloneNotSupportedException e2) {
 					JOptionPane.showMessageDialog(null, "Something Went Wrong!");
 				}catch (FullHandException ex) {
-					JOptionPane.showMessageDialog(null, "Your Hand is Full!");
+					SoundValidator.playFullHandSound(currentPlayer,ex.getBurned());
 				}
 				
 				Hero tmp = currentPlayer;
